@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install --no-cache-dir flask pymodbus
+RUN pip install -r requirements.txt
 
 EXPOSE 502 5000
 
