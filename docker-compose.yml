@@ -1,0 +1,10 @@
+version: '3'
+services:
+  weather-station:
+    build: .
+    ports:
+      - "502:502"
+      - "5000:5000"
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
